@@ -1,64 +1,95 @@
 .obras {
-    padding: 4rem 2rem;
-    background-color: #e8f5e9;
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.obras h2 {
+  text-align: center;
+  color: #4CAF50;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.obras.animate h2 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.obras-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.obra-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 0.5s ease forwards;
+  animation-play-state: paused;
+}
+
+.obras.animate .obra-card {
+  animation-play-state: running;
+}
+
+.obra-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.obra-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.obra-card:hover img {
+  transform: scale(1.1);
+}
+
+.obra-card h3 {
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: #4CAF50;
+  text-align: center;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
   }
-  
-  .obras h2 {
-    text-align: center;
-    color: #4CAF50;
-    margin-bottom: 2rem;
-    animation: slideUp 1s ease-out;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
+}
+
+@media screen and (max-width: 768px) {
   .obras-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
-  
-  .obra-card {
-    background-color: #ffffff;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    animation: fadeIn 1s ease-out;
+}
+
+@media screen and (max-width: 480px) {
+  .obras h2 {
+    font-size: 2rem;
   }
-  
-  .obra-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+
+  .obras-grid {
+    grid-template-columns: 1fr;
   }
-  
-  .obra-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-  }
-  
-  .obra-card:hover img {
-    transform: scale(1.1);
-  }
-  
-  .obra-card h3 {
-    padding: 1rem;
-    font-size: 1.2rem;
-    color: #4CAF50;
-    text-align: center;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .obras-grid {
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-  }
-  
-  @media screen and (max-width: 480px) {
-    .obras-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-  
+}
+

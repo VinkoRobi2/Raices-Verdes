@@ -1,0 +1,61 @@
+.que-cesped-elegir {
+    padding: 4rem 2rem;
+    background-color: #f0f8f0;
+    text-align: center;
+  }
+  
+  .que-cesped-elegir h2 {
+    color: #4CAF50;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    animation: slideUp 1s ease-out;
+  }
+  
+  .cesped-guide {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto 2rem;
+  }
+  
+  .guide-item {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .guide-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .guide-item h3 {
+    color: #4CAF50;
+    margin-bottom: 1rem;
+  }
+  
+  .guide-item p {
+    color: #666;
+  }
+  
+  .guide-cta {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #4CAF50;
+    margin-top: 2rem;
+    animation: pulse 2s infinite;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .que-cesped-elegir h2 {
+      font-size: 2rem;
+    }
+  
+    .guide-item {
+      padding: 1.5rem;
+    }
+  }
+  
+  
