@@ -21,7 +21,7 @@
 
 .obras-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(2, 1fr); /* Siempre 2 columnas */
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -50,7 +50,7 @@
 
 .obra-card img {
   width: 100%;
-  height: 200px;
+  height: 550px; 
   object-fit: cover;
   transition: transform 0.3s ease;
 }
@@ -61,7 +61,7 @@
 
 .obra-card h3 {
   padding: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem; 
   color: #4CAF50;
   text-align: center;
 }
@@ -79,8 +79,11 @@
 
 @media screen and (max-width: 768px) {
   .obras-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(2, 1fr); 
   }
+
+  .obra-card img {
+    height: 350px; 
 }
 
 @media screen and (max-width: 480px) {
@@ -89,7 +92,11 @@
   }
 
   .obras-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; 
+  }
+
+  .obra-card img {
+    height: 300px; 
   }
 }
-
+}

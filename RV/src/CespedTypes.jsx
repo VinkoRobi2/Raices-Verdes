@@ -1,37 +1,78 @@
 import React, { useState } from 'react';
 import './CespedTypes.css';
 import Tifway from './assets/Tifway.png';
-import Bermuda from './assets/Bermuda.png'
+import Bermuda from './assets/Bermuda.png';
+import Grama from './assets/Grama.png';
+import Blend from './assets/Blend.png';
 
 const cespedData = [
   {
     name: 'Tifway 419',
-    images: [Tifway], 
-    description: 'Un césped resistente y de rápido crecimiento, ideal para áreas de alto tráfico.',
-    details: 'El Tifway 419 es conocido por su excelente tolerancia al desgaste y su recuperación rápida. Es perfecto para campos deportivos y áreas residenciales de alto uso.',
-    characteristics: ['Alta resistencia al tráfico', 'Rápida recuperación', 'Color verde intenso', 'Bajo consumo de agua']
+    images: [Tifway],
+    description: 'Césped híbrido diseñado para alto rendimiento, ideal para canchas deportivas y jardines premium.',
+    details: 'El Tifway 419 es un césped híbrido especialmente desarrollado para canchas deportivas y jardines de alto rendimiento. Ofrece crecimiento denso, resistencia al desgaste, y tolerancia al calor.',
+    characteristics: [
+      'Césped híbrido desarrollado especialmente para canchas deportivas y jardines de alto rendimiento.',
+      'Crecimiento denso y resistente al desgaste.',
+      'Excelente tolerancia al calor y moderada resistencia al frío.',
+      'Necesita podas frecuentes para mantener su estética.',
+    ],
+    advantages: [
+      'Recuperación rápida ante daños por tránsito.',
+      'Color verde oscuro atractivo.',
+      'Ideal para campos deportivos, estadios y áreas residenciales premium.',
+    ],
   },
   {
     name: 'Grama Bahiana',
-    images: ['/placeholder.svg?height=300&width=400'],
-    description: 'Perfecta para climas cálidos, esta grama es de bajo mantenimiento y alta durabilidad.',
-    details: 'La Grama Bahiana es resistente a la sequía y se adapta bien a suelos pobres. Su textura gruesa la hace ideal para prevenir la erosión en pendientes.',
-    characteristics: ['Resistente a la sequía', 'Adaptable a suelos pobres', 'Baja necesidad de mantenimiento', 'Excelente para control de erosión']
+    images: [Grama],
+    description: 'Césped de hojas anchas, resistente y adaptable a diferentes condiciones.',
+    details: 'La Grama Bahiana es ideal para climas cálidos y húmedos, muy resistente a la semisombra y adaptable a diferentes tipos de suelo. Requiere un riego alto para mantener su vigor.',
+    characteristics: [
+      'Césped de hojas anchas, ideal para climas cálidos y húmedos.',
+      'Muy resistente a la semisombra y adaptable a diferentes tipos de suelo.',
+      'Requiere riego alto.',
+    ],
+    advantages: [
+      'Compite con las malezas.',
+      'Es rastrera.',
+      'Perfecta para jardines residenciales y áreas con sombra parcial.',
+    ],
   },
   {
-    name: 'Blend 356',
-    images: ['/placeholder.svg?height=300&width=400'],
-    description: 'Una mezcla única que combina belleza y resistencia para un césped excepcional.',
-    details: 'El Blend 356 es una mezcla especial que ofrece lo mejor de varios tipos de césped. Proporciona un color verde intenso y una textura suave, ideal para jardines ornamentales.',
-    characteristics: ['Mezcla de variedades premium', 'Color verde intenso', 'Textura suave', 'Adaptable a diferentes climas']
+    name: 'Blend 365',
+    images: [Blend],
+    description: 'Césped diseñado para lucir bien todo el año, ideal para zonas residenciales y comerciales.',
+    details: 'El Blend 365 combina variedades premium para mantener un color verde vibrante durante todas las estaciones. Ofrece una alta densidad y tolerancia a climas diversos.',
+    characteristics: [
+      'Mezcla premium diseñada para lucir bien durante todo el año.',
+      'Combinación de variedades que soportan climas cálidos y fríos.',
+      'Alta densidad y color verde vibrante en todas las estaciones.',
+    ],
+    advantages: [
+      'Verde todo el año, no requiere resiembra.',
+      'Tolerancia al tránsito moderado.',
+      'Ideal para zonas residenciales y comerciales que buscan estética constante.',
+    ],
   },
   {
     name: 'Bermuda Elite',
-    images: [Bermuda], 
-    description: 'Un césped de alta calidad con un color verde intenso y textura fina.',
-    details: 'La Bermuda Elite es conocida por su color verde oscuro y su capacidad para formar un césped denso. Es resistente al calor y la sequía, perfecta para regiones cálidas.',
-    characteristics: ['Color verde oscuro intenso', 'Textura fina', 'Alta densidad', 'Resistente al calor y la sequía']
-  }
+    images: [Bermuda],
+    description: 'Césped de alta calidad, ideal para climas cálidos y templados.',
+    details: 'La Bermuda Elite ofrece un crecimiento denso y uniforme, siendo ideal para jardines, parques y áreas deportivas. Es resistente al tránsito intenso y tolera bien el calor extremo.',
+    characteristics: [
+      'Ideal para climas cálidos y templados.',
+      'Resistente al tránsito intenso, perfecta para jardines, parques y áreas deportivas.',
+      'Crecimiento denso y uniforme.',
+      'Requiere mantenimiento regular (riego, corte y fertilización).',
+      'Buena tolerancia a la sequía y al calor extremo.',
+    ],
+    advantages: [
+      'Recuperación rápida ante daños.',
+      'Textura fina y suave al tacto.',
+      'Excelente estética con un color verde vibrante.',
+    ],
+  },
 ];
 
 function CespedTypes() {
@@ -43,7 +84,7 @@ function CespedTypes() {
 
   return (
     <section className="cesped-types" id="cesped">
-      <h2>Nuestro Cesped Premium</h2>
+      <h2>Nuestro Césped Premium</h2>
       <div className="cesped-grid">
         {cespedData.map((cesped, index) => (
           <div 
@@ -53,6 +94,7 @@ function CespedTypes() {
           >
             <div className="image-slider">
               <img 
+                loading="lazy"
                 src={cesped.images[0]} 
                 alt={`${cesped.name} - Imagen 1`} 
               />
@@ -66,6 +108,12 @@ function CespedTypes() {
                 <ul>
                   {cesped.characteristics.map((char, charIndex) => (
                     <li key={charIndex}>{char}</li>
+                  ))}
+                </ul>
+                <h4>Ventajas:</h4>
+                <ul>
+                  {cesped.advantages.map((adv, advIndex) => (
+                    <li key={advIndex}>{adv}</li>
                   ))}
                 </ul>
               </div>

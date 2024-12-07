@@ -52,6 +52,7 @@ function Hero() {
       {heroData.map((slide, index) => (
   <div
     key={index}
+    loading="lazy"
     className={`hero-slide ${index === currentSlide ? 'active' : ''}`}
     style={{ backgroundImage: `url(${slide.image})` }}
   >

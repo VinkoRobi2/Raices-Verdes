@@ -7,8 +7,8 @@ function Footer() {
       <div className="footer-content">
         <div className="footer-info">
           <h3>Raíces Verdes</h3>
-          <p>Email: info@raicesverdes.com</p>
-          <p>Teléfono: +1 234 567 8900</p>
+          <p>Email: greenroots.cba@gmail.com</p>
+          <p>Teléfono: +54 9 3513 44-6906</p>
         </div>
         <div className="footer-social">
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">

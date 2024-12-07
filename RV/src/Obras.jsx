@@ -1,11 +1,14 @@
 import React, { useEffect, useRef } from 'react';
 import './Obras.css';
-
+import obra1 from "./assets/Obra1.png"
+import obra2 from "./assets/obra2.png"
+import Obra3 from "./assets/Obra3.png"
+import Obra4 from "./assets/Obra4.png"
 const obrasData = [
-  { id: 1, image: '/obra1.jpg', title: 'Parque Central' },
-  { id: 2, image: '/obra2.jpg', title: 'Residencial Los Pinos' },
-  { id: 3, image: '/obra3.jpg', title: 'Campo de Golf El Roble' },
-  { id: 4, image: '/obra4.jpg', title: 'Estadio Municipal' },
+  { id: 1, image: obra1, },
+  { id: 2, image: obra2, },
+  { id: 3, image: Obra3, },
+  { id: 4, image: Obra4, },
 ];
 
 function Obras() {
@@ -40,8 +43,7 @@ function Obras() {
       <div className="obras-grid">
         {obrasData.map((obra, index) => (
           <div key={obra.id} className="obra-card" style={{animationDelay: `${index * 0.1}s`}}>
-            <img src={obra.image} alt={obra.title} />
-            <h3>{obra.title}</h3>
+            <img src={obra.image} />
           </div>
         ))}
       </div>
