@@ -17,6 +17,7 @@
 
 .navbar-container {
   display: flex;
+  margin-top: -20px!important;
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
@@ -25,7 +26,7 @@
 }
 
 .navbar-logo img {
-  height: 40px;
+  height:125px;
   width: auto;
   transition: transform 0.3s ease;
 }
@@ -138,4 +139,7 @@
   .navbar.menu-open .menu-icon span:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -6px);
   }
+}
+html{
+scroll-behavior: smooth;
 }

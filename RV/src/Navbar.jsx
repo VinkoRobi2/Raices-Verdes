@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
+import logo from "./assets/logo.png"
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -27,7 +28,7 @@ function Navbar() {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''} ${menuOpen ? 'menu-open' : ''}`}>
       <div className="navbar-container">
         <div className="navbar-logo">
-          <img src="/logo.svg" alt="EnRaíces Verdes Logo" />
+          <img className='logo' src={logo} alt="EnRaíces Verdes Logo" />
         </div>
         <div className="menu-icon" onClick={toggleMenu}>
           <span></span>
