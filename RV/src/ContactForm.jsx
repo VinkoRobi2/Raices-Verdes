@@ -22,7 +22,7 @@ function ContactForm() {
 
   return (
     <section className="contact-form" id="contacto">
-      <h2>Contáctanos</h2>
+      <h2>¿Tenés una consulta? Escribinos.</h2>
       <form onSubmit={handleSubmit}>
         <input
           type="text"

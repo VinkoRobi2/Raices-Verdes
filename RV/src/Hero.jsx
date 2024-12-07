@@ -1,19 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import './Hero.css';
+import foto from "./assets/Foto1.png"
+import foto3 from "./assets/Foto3.png"
+import foto2 from "./assets/Foto2.png"
 
 const heroData = [
   {
-    image: '/hero1.jpg',
+    image:  foto,
     title: 'TRANSFORMA TU ESPACIO',
     subtitle: 'Con el poder de la naturaleza'
   },
   {
-    image: '/hero2.jpg',
+    image: foto2,
     title: 'DESCUBRE LA MAGIA',
     subtitle: 'De un césped perfecto'
   },
   {
-    image: '/hero3.jpg',
+    image: foto3,
     title: 'CREA TU OASIS VERDE',
     subtitle: 'En cualquier lugar'
   }
@@ -47,18 +50,19 @@ function Hero() {
   return (
     <section className={`hero ${isInitialLoad ? 'initial-load' : ''}`} id="inicio">
       {heroData.map((slide, index) => (
-        <div
-          key={index}
-          className={`hero-slide ${index === currentSlide ? 'active' : ''} ${index === nextSlide ? 'next' : ''}`}
-          style={{ backgroundImage: `url(${slide.image})` }}
-        >
-          <div className="hero-content">
-            <h1>{slide.title}</h1>
-            <p>{slide.subtitle}</p>
-            <a href="#cesped" className="cta-button">Explora nuestro césped</a>
-          </div>
-        </div>
-      ))}
+  <div
+    key={index}
+    className={`hero-slide ${index === currentSlide ? 'active' : ''}`}
+    style={{ backgroundImage: `url(${slide.image})` }}
+  >
+    <div className="hero-content">
+      <h1>{slide.title}</h1>
+      <p>{slide.subtitle}</p>
+      <a href="#cesped" className="cta-button">Explora nuestro césped</a>
+    </div>
+  </div>
+))}
+
     </section>
   );
 }
