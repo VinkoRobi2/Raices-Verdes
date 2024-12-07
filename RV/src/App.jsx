@@ -1,10 +1,24 @@
-import { useState } from 'react'
+import React from 'react';
+import Navbar from './Navbar';
+import Hero from './Hero';
+import CespedTypes from './CespedTypes';
+import Obras from './Obras';
+import ContactForm from './ContactForm';
+import Footer from './Footer';
+import './App.css';
 
-
-const App = ()=>{
-  return(
-    <h1>RV</h1>
-  )
+function App() {
+  return (
+    <div className="App">
+      <Navbar />
+      <Hero />
+      <CespedTypes />
+      <Obras />
+      <ContactForm />
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
+
