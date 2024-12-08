@@ -38,6 +38,7 @@ const cespedData = [
       'Requiere riego alto.',
     ],
     advantages: [
+      
       'Compite con las malezas.',
       'Es rastrera.',
       'Perfecta para jardines residenciales y áreas con sombra parcial.',
