@@ -43,6 +43,7 @@
   .guide-cta {
     font-size: 1.2rem;
     font-weight: 600;
+    cursor: pointer;
     color: #4CAF50;
     margin-top: 2rem;
     animation: pulse 2s infinite;

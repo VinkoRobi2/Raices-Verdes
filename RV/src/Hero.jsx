@@ -13,7 +13,7 @@ const heroData = [
   {
     image: foto2,
     title: 'DESCUBRE LA MAGIA',
-    subtitle: 'De un césped perfecto'
+    subtitle: 'De un césped de calidad'
   },
   {
     image: foto3,
@@ -59,7 +59,7 @@ function Hero() {
     <div className="hero-content">
       <h1>{slide.title}</h1>
       <p>{slide.subtitle}</p>
-      <a href="#cesped" className="cta-button">Explora nuestro césped</a>
+      <a href="#cesped" className="cta-button">Conoce nuestro césped</a>
     </div>
   </div>
 ))}
