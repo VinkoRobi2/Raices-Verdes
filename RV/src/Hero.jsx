@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './Hero.css';
-import foto1 from "./assets/foto1.webp"; 
-import foto2 from "./assets/foto2.webp"; 
-import foto3 from "./assets/foto3.webp";
+import foto1 from '@assets/foto1.webp'; 
+import foto2 from '@assets/foto2.webp'; 
+import foto3 from '@assets/foto3.webp';
 
 
 const heroData = [
