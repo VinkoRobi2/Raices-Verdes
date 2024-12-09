@@ -31,12 +31,12 @@ function QuienesSomos() {
     <section className="quienes-somos" id="quienes-somos" ref={sectionRef}>
       <div className="quienes-somos-content">
         <h2>Quiénes Somos</h2>
-        <p>En Raíces Verdes, somos apasionados por crear espacios verdes hermosos y sostenibles. Con años de experiencia en el cultivo y la instalación de césped de alta calidad, nos enorgullece ofrecer soluciones personalizadas para transformar cualquier espacio exterior.</p>
-        <p>Nuestro equipo de expertos está comprometido con la excelencia, la innovación y el cuidado del medio ambiente. Trabajamos incansablemente para proporcionar a nuestros clientes el césped más saludable y resistente, adaptado a sus necesidades específicas y a las condiciones locales.</p>
+        <p>En Raíces Verdes somos apasionados por transformar espacios con césped natural de la más alta calidad. Nos dedicamos a la producción, comercialización y colocación de césped, respaldados por un equipo de profesionales especializados en césped y espacios verdes. Nos comprometemos a ofrecerte la mejor calidad, atención personalizada y un excelente servicio.</p>
+        <p>Contamos con diversas variedades de césped que se adaptan a cualquier necesidad: áreas de esparcimiento, campos deportivos y espacios públicos.</p>
+        <p>Gracias a nuestra tecnología de punta y personal altamente calificado, garantizamos productos de calidad superior.</p>
       </div>
     </section>
   );
 }
 
 export default QuienesSomos;
-

@@ -61,7 +61,7 @@ const cespedData = [
     ],
   },
   {
-    name: 'Bermuda Elite',
+    name: 'Bermuda Prestige',
     images: [Bermuda],
     description: 'Césped de alta calidad, ideal para climas cálidos y templados.',
     details: 'La Bermuda Elite ofrece un crecimiento denso y uniforme, siendo ideal para jardines, parques y áreas deportivas. Es resistente al tránsito intenso y tolera bien el calor extremo.',

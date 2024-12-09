@@ -4,7 +4,7 @@ import './QueCespedElejir.css';
 function QueCespedElegir() {
   return (
     <section className="que-cesped-elegir" id="que-cesped-elegir">
-      <h2>¿Qué Cesped Elegir?</h2>
+      <h2>¿Qué Césped Elegir?</h2>
       <div className="cesped-guide">
         <div className="guide-item">
           <h3>Considera el Clima</h3>

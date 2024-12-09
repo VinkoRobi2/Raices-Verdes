@@ -48,7 +48,10 @@ function Hero() {
   }, [isInitialLoad]);
 
   return (
+
+
     <section className={`hero ${isInitialLoad ? 'initial-load' : ''}`} id="inicio">
+
       {heroData.map((slide, index) => (
         <div
           key={index}
