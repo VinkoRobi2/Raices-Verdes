@@ -20,13 +20,13 @@ const cespedData = [
     ],
     advantages: [
       'Fácil recuperación tras cortes o daños por uso intenso.',
-      'Bajo consumo de agua en comparación con otros céspedes de alto rendimiento.',
+      'Riego moderado',
       'Aspecto verde intenso durante la mayor parte del año.',
       'Ideal tanto para aplicaciones deportivas como residenciales.',
       'Compatible con climas cálidos y templados.',
+      'El más resistente al tránsito.',
     ],
-  }
-  ,
+  },
   {
     name: 'Grama Bahiana',
     images: [Grama],
@@ -38,7 +38,6 @@ const cespedData = [
       'Requiere riego alto.',
     ],
     advantages: [
-      
       'Compite con las malezas.',
       'Es rastrera.',
       'Perfecta para jardines residenciales y áreas con sombra parcial.',
@@ -71,13 +70,15 @@ const cespedData = [
       'Crecimiento denso y uniforme.',
       'Requiere mantenimiento regular (riego, corte y fertilización).',
       'Buena tolerancia a la sequía y al calor extremo.',
+      'Apta para sol pleno.',
     ],
     advantages: [
       'Recuperación rápida ante daños.',
       'Textura fina y suave al tacto.',
       'Excelente estética con un color verde vibrante.',
+      'Crecimiento rastrero que cubre uniformemente y muy resistente al calor.',
     ],
-  },
+  }
 ];
 
 function CespedTypes() {
@@ -112,13 +113,13 @@ function CespedTypes() {
                 <h4>Características:</h4>
                 <ul>
                   {cesped.characteristics.map((char, charIndex) => (
-                    <li key={charIndex}>{char}</li>
+                    <li key={charIndex} style={{animationDelay: `${charIndex * 0.1}s`}}>{char}</li>
                   ))}
                 </ul>
                 <h4>Ventajas:</h4>
                 <ul>
                   {cesped.advantages.map((adv, advIndex) => (
-                    <li key={advIndex}>{adv}</li>
+                    <li key={advIndex} style={{animationDelay: `${advIndex * 0.1}s`}}>{adv}</li>
                   ))}
                 </ul>
               </div>
@@ -131,3 +132,4 @@ function CespedTypes() {
 }
 
 export default CespedTypes;
+
