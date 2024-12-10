@@ -90,6 +90,10 @@ function CespedTypes() {
 
   return (
     <section className="cesped-types" id="cesped">
+      <h1 className='opacity'>s  </h1>
+      <h1 className='opacity'>s  </h1>
+      <h1 className='opacity'>s  </h1>
+      <h1 className='opacity'>s  </h1>
       <h2>Nuestro Césped Premium</h2>
       <div className="cesped-grid">
         {cespedData.map((cesped, index) => (

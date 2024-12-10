@@ -3,6 +3,9 @@
     background-color: #f9f9f9;
     overflow: hidden;
   }
+  .opacity{
+    opacity: 0;
+  }
   
   .quienes-somos-content {
     max-width: 800px;

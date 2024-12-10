@@ -22,6 +22,11 @@ function ContactForm() {
 
   return (
     <section className="contact-form" id="contacto">
+      <h1 className='opacity'>s  </h1>
+      <h1 className='opacity'>s  </h1>
+      <h1 className='opacity'>s  </h1>
+      <h1 className='opacity'>s  </h1>
+      <h1 className='opacity'>s  </h1>
       <h2>¿Tenés una consulta? Escribinos.</h2>
       <form onSubmit={handleSubmit}>
         <input

@@ -3,7 +3,9 @@ import './QueCespedElejir.css';
 
 function QueCespedElegir() {
   return (
-    <section className="que-cesped-elegir" id="que-cesped-elegir">
+    <div>
+      <h1 className='opacity'>s  </h1>
+      <section className="que-cesped-elegir" id="que-cesped-elegir">
       <h2>¿Qué Césped Elegir?</h2>
       <div className="cesped-guide">
         <div className="guide-item">
@@ -30,8 +32,11 @@ function QueCespedElegir() {
         ¿Necesitas ayuda para elegir? ¡Contáctanos y te asesoraremos!
       </p>
     </section>
+    </div>
+    
   );
 }
 
 export default QueCespedElegir;
 
+//     

@@ -3,7 +3,11 @@
     background-color: #f0f8f0;
     text-align: center;
   }
-  
+  .opacity{
+    opacity: 0;
+    height: 0px;
+    background-color: #4CAF50;
+  }
   .que-cesped-elegir h2 {
     color: #4CAF50;
     margin-bottom: 2rem;

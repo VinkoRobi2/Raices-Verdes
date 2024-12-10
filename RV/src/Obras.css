@@ -1,7 +1,13 @@
+
 .obras {
   padding: 4rem 2rem;
   background-color: #ffffff;
   overflow: hidden;
+  scroll-margin-top: 80px; 
+}
+.yipiyo{
+  color: #4CAF50;
+  background-color: #4CAF50;
 }
 
 .obras h2 {
@@ -21,7 +27,7 @@
 
 .obras-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Siempre 2 columnas */
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
