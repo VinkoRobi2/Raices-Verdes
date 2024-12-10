@@ -1,8 +1,12 @@
 import React from 'react';
 import './Footer.css';
-import foto1 from "./assets/1.png"
-import foto2 from "./assets/2.png"
-import foto4 from "./assets/3.png"
+
+const SocialIcon = ({ href, src, alt }) => (
+  <a href={href} target="_blank" rel="noopener noreferrer" className="social-icon">
+    <img src={src} alt={alt} className="icon-image" />
+  </a>
+);
+
 function Footer() {
   return (
     <footer className="footer">
@@ -13,22 +17,9 @@ function Footer() {
           <p>Teléfono: +54 9 3513 44-6906</p>
         </div>
         <div className="footer-social">
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-instagram"></i>
-            <img src = {foto2}/>
-          </a>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-facebook"></i>
-            <img src={foto1}/>
-          </a>
-          <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-tiktok"></i>
-            <img src={foto4}/>
-          </a>
-          <a href="https://business.google.com" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-google"></i>
-
-          </a>
+          <SocialIcon href="https://instagram.com" src="/assets/2.png" alt="Instagram" />
+          <SocialIcon href="https://facebook.com" src="/assets/1.png" alt="Facebook" />
+          <SocialIcon href="https://tiktok.com" src="/assets/3.png" alt="TikTok" />
         </div>
       </div>
     </footer>
@@ -36,3 +27,4 @@ function Footer() {
 }
 
 export default Footer;
+

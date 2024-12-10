@@ -1,5 +1,5 @@
 .footer {
-  background-color: #4CAF50;
+  background: linear-gradient(to right, #4CAF50, #45a049);
   color: #ffffff;
   padding: 2rem 0;
 }
@@ -15,25 +15,42 @@
 
 .footer-info h3 {
   margin-bottom: 0.5rem;
-  animation: slideInLeft 1s ease-out;
+  font-size: 1.5rem;
 }
 
 .footer-info p {
   margin-bottom: 0.25rem;
-  animation: slideInLeft 1s ease-out;
+  font-size: 0.9rem;
 }
 
-.footer-social a {
-  color: #ffffff;
-  font-size: 1.5rem;
-  margin-left: 1rem;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  animation: slideInRight 1s ease-out;
+.footer-social {
+  display: flex;
+  gap: 1rem;
 }
 
-.footer-social a:hover {
-  opacity: 0.8;
-  transform: translateY(-3px);
+.social-icon {
+  display: inline-block;
+  animation: bounce 2s infinite;
+}
+
+.icon-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover .icon-image {
+  transform: scale(1.1);
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -46,7 +63,13 @@
     margin-top: 1rem;
   }
 
-  .footer-social a {
-    margin: 0 0.5rem;
+  .footer-info p {
+    font-size: 0.8rem;
+  }
+
+  .icon-image {
+    width: 25px;
+    height: 25px;
   }
 }
+
