@@ -1,8 +1,12 @@
 
 import './Obras.css';
+import camino3 from './assets/camino3.webp'
 import obra1 from "./assets/Obra1.png";
-import obra2 from "./assets/obra2.png";
+import comercial1 from "./assets/Comercial1.webp"
+import casa3 from "./assets/casa3.webp"
 import Obra4 from "./assets/Obra4.png";
+import camino2 from "./assets/camino2.webp"
+import camino1 from "./assets/camino1.webp"
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, ChevronUp, ChevronLeft, ChevronRight } from 'lucide-react';
@@ -16,6 +20,7 @@ const obrasData = [
     images: [
       obra1,
       Obra4,
+      casa3,
     ]
   },
   {
@@ -30,20 +35,10 @@ const obrasData = [
   },
   {
     id: 3,
-    title: 'OBRAS Industriales',
-    description: 'Incluye fábricas, plantas de producción o almacenes grandes.',
-    images: [
-      '/placeholder.svg?height=450&width=600&text=Industriales+1',
-      '/placeholder.svg?height=450&width=600&text=Industriales+2',
-      '/placeholder.svg?height=450&width=600&text=Industriales+3',
-    ]
-  },
-  {
-    id: 4,
     title: 'OBRAS Comerciales',
     description: 'Para locales, centros comerciales o negocios pequeños y medianos.',
     images: [
-      '/placeholder.svg?height=450&width=600&text=Comerciales+1',
+      comercial1,
       '/placeholder.svg?height=450&width=600&text=Comerciales+2',
       '/placeholder.svg?height=450&width=600&text=Comerciales+3',
     ]
@@ -53,9 +48,9 @@ const obrasData = [
     title: 'OBRAS Públicas',
     description: 'Como escuelas, hospitales, parques, caminos, y cualquier infraestructura de uso público.',
     images: [
-      '/placeholder.svg?height=450&width=600&text=Publicas+1',
-      '/placeholder.svg?height=450&width=600&text=Publicas+2',
-      '/placeholder.svg?height=450&width=600&text=Publicas+3',
+      camino1,
+      camino2,
+      camino3,
     ]
   },
   {
@@ -70,16 +65,6 @@ const obrasData = [
   },
   {
     id: 7,
-    title: 'Remodelaciones y Restauraciones',
-    description: 'Proyectos que impliquen transformar o modernizar espacios existentes.',
-    images: [
-      '/placeholder.svg?height=450&width=600&text=Remodelaciones+1',
-      '/placeholder.svg?height=450&width=600&text=Remodelaciones+2',
-      '/placeholder.svg?height=450&width=600&text=Remodelaciones+3',
-    ]
-  },
-  {
-    id: 8,
     title: 'OBRAS Sustentables',
     description: 'Proyectos con enfoque en energías renovables, eficiencia energética o diseño sostenible.',
     images: [
