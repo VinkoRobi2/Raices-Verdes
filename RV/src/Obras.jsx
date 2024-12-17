@@ -2,7 +2,6 @@
 import './Obras.css';
 import obra1 from "./assets/Obra1.png";
 import obra2 from "./assets/obra2.png";
-import Obra3 from "./assets/Obra3.png";
 import Obra4 from "./assets/Obra4.png";
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -15,9 +14,8 @@ const obrasData = [
     title: 'OBRAS Residenciales',
     description: 'Para casas, departamentos y proyectos de vivienda en general.',
     images: [
-      '/placeholder.svg?height=450&width=600&text=Residencial+1',
-      '/placeholder.svg?height=450&width=600&text=Residencial+2',
-      '/placeholder.svg?height=450&width=600&text=Residencial+3',
+      obra1,
+      Obra4,
     ]
   },
   {
@@ -139,7 +137,7 @@ const Obras = () => {
       <motion.h1 
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0 }}
         className="obras-title"
       >
         OBRAS
@@ -151,7 +149,7 @@ const Obras = () => {
             className={`obra-card ${expandedId === obra.id ? 'expanded' : ''}`}
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0 }}
             whileHover={{ scale: 1.05 }}
           >
             <ImageCarousel images={obra.images} />
@@ -160,7 +158,7 @@ const Obras = () => {
               className="obra-description"
               initial={false}
               animate={{ height: expandedId === obra.id ? 'auto' : 0 }}
-              transition={{ duration: 0.3 }}
+              transition={{ duration: 0 }}
             >
               <p>{obra.description}</p>
             </motion.div>
