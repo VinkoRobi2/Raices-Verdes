@@ -3,8 +3,11 @@ import './Obras.css';
 import camino3 from './assets/camino3.webp'
 import obra1 from "./assets/Obra1.png";
 import comercial1 from "./assets/Comercial1.webp"
+import come3 from "./assets/come3.jpg"
+import publicca5 from "./assets/publica5.jpg"
 import casa3 from "./assets/casa3.webp"
 import comercial2 from "./assets/comercial2.jpg"
+import publica4 from "./assets/publica4.jpg"
 import Obra4 from "./assets/Obra4.png";
 import camino2 from "./assets/camino2.webp"
 import camino1 from "./assets/camino1.webp"
@@ -19,51 +22,34 @@ const obrasData = [
     title: 'OBRAS Residenciales',
     description: 'Para casas, departamentos y proyectos de vivienda en general.',
     images: [
-      obra1,
-      Obra4,
       casa3,
+      Obra4,
+      obra1 ,
     ]
   },
   {
     id: 2,
-    title: 'OBRAS Corporativas',
-    description: 'Ideal para oficinas, edificios empresariales o sedes de negocios.',
-    images: [
-      '/placeholder.svg?height=450&width=600&text=Corporativa+1',
-      '/placeholder.svg?height=450&width=600&text=Corporativa+2',
-      '/placeholder.svg?height=450&width=600&text=Corporativa+3',
-    ]
-  },
-  {
-    id: 3,
     title: 'OBRAS Comerciales',
     description: 'Para locales, centros comerciales o negocios pequeños y medianos.',
     images: [
       comercial1,
       comercial2,
-      '/placeholder.svg?height=450&width=600&text=Comerciales+3',
+      come3,
     ]
   },
   {
-    id: 5,
+    id: 3,
     title: 'OBRAS Públicas',
     description: 'Como escuelas, hospitales, parques, caminos, y cualquier infraestructura de uso público.',
     images: [
       camino1,
       camino2,
       camino3,
+      publica4,
+      publicca5,
     ]
   },
-  {
-    id: 6,
-    title: 'Grandes Proyectos',
-    description: 'Para proyectos de gran envergadura o alta complejidad, como rascacielos, centros logísticos o desarrollos masivos.',
-    images: [
-      '/placeholder.svg?height=450&width=600&text=Grandes+1',
-      '/placeholder.svg?height=450&width=600&text=Grandes+2',
-      '/placeholder.svg?height=450&width=600&text=Grandes+3',
-    ]
-  },
+
 
 ];
 
