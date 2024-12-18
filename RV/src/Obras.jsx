@@ -64,16 +64,7 @@ const obrasData = [
       '/placeholder.svg?height=450&width=600&text=Grandes+3',
     ]
   },
-  {
-    id: 7,
-    title: 'OBRAS Sustentables',
-    description: 'Proyectos con enfoque en energías renovables, eficiencia energética o diseño sostenible.',
-    images: [
-      '/placeholder.svg?height=450&width=600&text=Sustentables+1',
-      '/placeholder.svg?height=450&width=600&text=Sustentables+2',
-      '/placeholder.svg?height=450&width=600&text=Sustentables+3',
-    ]
-  },
+
 ];
 
 const ImageCarousel = ({ images }) => {
