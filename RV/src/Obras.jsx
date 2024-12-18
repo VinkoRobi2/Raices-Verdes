@@ -4,6 +4,7 @@ import camino3 from './assets/camino3.webp'
 import obra1 from "./assets/Obra1.png";
 import comercial1 from "./assets/Comercial1.webp"
 import casa3 from "./assets/casa3.webp"
+import comercial2 from "./assets/comercial2.jpg"
 import Obra4 from "./assets/Obra4.png";
 import camino2 from "./assets/camino2.webp"
 import camino1 from "./assets/camino1.webp"
@@ -39,7 +40,7 @@ const obrasData = [
     description: 'Para locales, centros comerciales o negocios pequeños y medianos.',
     images: [
       comercial1,
-      '/placeholder.svg?height=450&width=600&text=Comerciales+2',
+      comercial2,
       '/placeholder.svg?height=450&width=600&text=Comerciales+3',
     ]
   },
