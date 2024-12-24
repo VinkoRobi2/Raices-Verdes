@@ -36,9 +36,6 @@ func GetVisita(c *gin.Context) {
 	Ip_address := c.ClientIP()
 
 	if Ipexist(Ip_address) {
-		c.JSON(http.StatusOK, gin.H{
-			"total_visitas": GetTotalVisitas(),
-		})
 		return
 	}
 
@@ -66,7 +63,7 @@ func main() {
 	}))
 	
 
-	dsn := "usuario:contraseña@tcp(127.0.0.1:3306)/nombre_de_base_de_datos?charset=utf8mb4&parseTime=True&loc=Local"
+	dsn := "root:admin@tcp(127.0.0.1:3306)/VisitantesDB?charset=utf8mb4&parseTime=True&loc=Local"
 	db, err = gorm.Open(mysql.Open(dsn), &gorm.Config{})
 	if err != nil {
 		panic("No se pudo conectar a la base de datos")

@@ -3,24 +3,34 @@ import './VisitorCounter.css';
 
 function VisitorCounter() {
   const [visitorCount, setVisitorCount] = useState(0);
+  const [mensajeerr, setMensajerr] = useState("");
 
   useEffect(() => {
-    // Simular una llamada a la API para obtener el recuento de visitantes
-    const fetchVisitorCount = () => {
-      // Aquí normalmente harías una llamada a tu backend
-      const simulatedCount = Math.floor(Math.random() * 10000) + 1000;
-      setVisitorCount(simulatedCount);
+    const GetVisitas = async () => {
+      try {
+        const ft = await fetch("http://localhost:8080/Visitorcount");
+        if (!ft.ok) {
+          throw new Error("Error al obtener las visitas");
+        }
+        const resp = await ft.json();
+        setVisitorCount(resp.visitas);
+      } catch (error) {
+        setMensajerr("Ha ocurrido un error al obtener las visitas. Inténtelo más tarde.");
+      }
     };
 
-    fetchVisitorCount();
+    GetVisitas();
   }, []);
 
   return (
     <div className="visitor-counter">
-      <p>Visitantes de la página: <span className="count">{visitorCount.toLocaleString()}</span></p>
+      {mensajeerr ? (
+        <p className="error">{mensajeerr}</p>
+      ) : (
+        <p>Visitantes de la página: <span className="count">{visitorCount.toLocaleString()}</span></p>
+      )}
     </div>
   );
 }
 
 export default VisitorCounter;
-
