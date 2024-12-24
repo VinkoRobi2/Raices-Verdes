@@ -6,7 +6,7 @@ import (
 	"github.com/gin-contrib/cors"
 	"gorm.io/gorm"
 	"net/http"
-	"fmt"
+
 )
 
 type Visitante struct {
@@ -37,7 +37,6 @@ func GetVisita(c *gin.Context) {
 
 	if Ipexist(Ip_address) {
 		c.JSON(http.StatusOK, gin.H{
-			"mensaje": "La IP ya existe en la base de datos.",
 			"total_visitas": GetTotalVisitas(),
 		})
 		return
@@ -58,7 +57,14 @@ func GetVisita(c *gin.Context) {
 func main() {
 
 	router := gin.Default()
-	router.Use(cors.Default()) 
+	router.Use(cors.New(cors.Config{
+		AllowOrigins:     []string{"https://mi-front-end.com"}, 
+		AllowMethods:     []string{"GET", "POST"},            
+		AllowHeaders:     []string{"Content-Type", "Authorization"}, 
+		ExposeHeaders:    []string{"Content-Length"},          
+		AllowCredentials: true,                                              
+	}))
+	
 
 	dsn := "usuario:contraseña@tcp(127.0.0.1:3306)/nombre_de_base_de_datos?charset=utf8mb4&parseTime=True&loc=Local"
 	db, err = gorm.Open(mysql.Open(dsn), &gorm.Config{})
