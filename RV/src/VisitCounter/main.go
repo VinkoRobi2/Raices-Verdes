@@ -53,7 +53,7 @@ func GetVisita(c *gin.Context) {
 func main() {
 	router := gin.Default()
 	router.Use(cors.New(cors.Config{
-		AllowOrigins:     []string{"https://mi-front-end.com"},
+		AllowOrigins:     []string{"https://raices-verdess.pages.dev/"},
 		AllowMethods:     []string{"GET", "POST"},
 		AllowHeaders:     []string{"Content-Type", "Authorization"},
 		ExposeHeaders:    []string{"Content-Length"},
