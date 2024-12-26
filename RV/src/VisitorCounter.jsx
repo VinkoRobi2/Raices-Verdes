@@ -8,7 +8,7 @@ function VisitorCounter() {
   useEffect(() => {
     const GetVisitas = async () => {
       try {
-        const ft = await fetch("http://localhost:8080/Visitorcount");
+        const ft = await fetch("https://raices-verdes.onrender.com");
         if (!ft.ok) {
           throw new Error("Error al obtener las visitas");
         }

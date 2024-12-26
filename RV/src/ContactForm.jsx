@@ -14,7 +14,6 @@ function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí iría la lógica para enviar el formulario
     console.log('Formulario enviado:', formData);
     alert('Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.');
     setFormData({ name: '', email: '', message: '' });
