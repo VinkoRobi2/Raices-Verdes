@@ -21,9 +21,9 @@ function Footer() {
           <p>Teléfono: +54 9 3513 44-6906</p>
         </div>
         <div className="footer-social">
-          <SocialIcon href="https://instagram.com" src={img2} alt="Instagram" />
-          <SocialIcon href="https://facebook.com" src={img1} alt="Facebook" />
-          <SocialIcon href="https://tiktok.com" src={img3} alt="TikTok" />
+          <SocialIcon href="https://www.instagram.com/cesped.raicesverdes?igsh=cWlqczJ3MmlqcG9z" src={img2} alt="Instagram" />
+          <SocialIcon href="https://www.facebook.com/raicesverdescba?mibextid=LQQJ4d&rdid=s7ipwfUI7slObmKj&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FfzEHW9KNhyre3A8d%2F%3Fmibextid%3DLQQJ4d" src={img1} alt="Facebook" />
+          <SocialIcon href="https://www.tiktok.com/@cesped.raicesverdes?_t=8sZRqLJDcv8&_r=1" src={img3} alt="TikTok" />
           <SocialIcon href="https://tiktok.com" src={img4} alt="Whatsapp" />
         </div>
       </div>
