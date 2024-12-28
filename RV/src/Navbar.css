@@ -127,6 +127,10 @@
   .menu-icon {
     display: flex;
   }
+  .navbar.menu-open .navbar-menu li a {
+    margin-left: 10px;
+  }
+  
 
   .navbar.menu-open .menu-icon span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
