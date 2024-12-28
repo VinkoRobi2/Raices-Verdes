@@ -21,14 +21,14 @@ function ContactForm() {
 
     try {
       await emailjs.send(
-        'your_service_id',   
-        'your_template_id', 
+        'service_6wopd0k',   
+        'template_gx689zp', 
         {
           name: formData.name,
           email: formData.email,
           message: formData.message,
         },
-        'your_public_key'    
+        'JwqNtn6Ebc6BXvzmQ'    
       );
 
       alert('¡Mensaje enviado exitosamente!');
