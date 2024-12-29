@@ -40,7 +40,7 @@ const obrasData = [
   {
     id: 3,
     title: 'OBRAS Públicas',
-    description: 'Como escuelas, hospitales, parques, caminos, y cualquier infraestructura de uso público.',
+    description: 'Transformamos espacios públicos con césped natural: desde parques hasta áreas recreativas.',
     images: [
       camino1,
       camino2,

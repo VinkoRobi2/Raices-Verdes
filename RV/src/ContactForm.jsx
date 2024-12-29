@@ -6,6 +6,7 @@ function ContactForm() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '',
     message: '',
   });
 
@@ -26,13 +27,14 @@ function ContactForm() {
         {
           name: formData.name,
           email: formData.email,
+          phone: formData.phone,
           message: formData.message,
         },
         'JwqNtn6Ebc6BXvzmQ'    
       );
 
       alert('¡Mensaje enviado exitosamente!');
-      setFormData({ name: '', email: '', message: '' }); 
+      setFormData({ name: '', email: '', phone: '', message: '' }); 
     } catch (error) {
       console.error('Error al enviar el mensaje:', error);
       alert('Hubo un problema al enviar tu mensaje. Intenta de nuevo.');
@@ -59,6 +61,16 @@ function ContactForm() {
           value={formData.email}
           onChange={handleChange}
           placeholder="Correo electrónico"
+          required
+        />
+        <input
+          type="tel"
+          name="phone"
+          value={formData.phone}
+          onChange={handleChange}
+          placeholder="Número de teléfono"
+          pattern="[0-9]{10,15}" 
+          title="Por favor ingresa un número válido (de 10 a 15 dígitos)."
           required
         />
         <textarea
