@@ -148,6 +148,13 @@
   z-index: 1000;
   animation: jump 1s infinite;
 }
+@media (max-width: 1280px) {
+  .whatsapp-logo {
+    left: 1000px;
+    width: 100px;
+    height: 100px;
+  }
+}
 
 /* Animación de salto */
 @keyframes jump {
@@ -175,9 +182,9 @@
 /* Media queries para dispositivos pequeños */
 @media (max-width: 480px) {
   .whatsapp-logo {
-    width: 30px;
-    height: 30px;
+    width: 80px;
+    height: 80px;
     bottom: 50px;
-    left: 70px;
+    left: 150px;
   }
 }

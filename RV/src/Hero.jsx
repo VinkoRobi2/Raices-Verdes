@@ -70,7 +70,7 @@ function Hero() {
       </section>
       
       <a 
-        href={whasap} 
+        href="https://wa.me/c/5493513446906" 
         target="_blank" 
         rel="noopener noreferrer" 
        
