@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Hero.css';
 import foto1 from '@assets/foto1.webp'; 
 import foto2 from '@assets/foto2.webp'; 
+import whasap from "../src/assets/whasap.png"
 import foto3 from '@assets/foto3.webp';
 
 
@@ -27,13 +28,10 @@ function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isInitialLoad, setIsInitialLoad] = useState(true);
 
-
   useEffect(() => {
- 
     const timer = setTimeout(() => {
       setIsInitialLoad(false);
-    }, );
-
+    }, 0);
 
     const interval = setInterval(() => {
       if (!isInitialLoad) {
@@ -47,27 +45,40 @@ function Hero() {
     };
   }, [isInitialLoad]);
 
+  // Función para manejar redirección (si la usas)
+  const handleReadFullArticle = () => {
+    // Tu lógica de navegación aquí
+  };
+
   return (
-
-
-    <section className={`hero ${isInitialLoad ? 'initial-load' : ''}`} id="inicio">
-
-      {heroData.map((slide, index) => (
-        <div
-          key={index}
-          loading="lazy"
-          className={`hero-slide ${index === currentSlide ? 'active' : ''}`}
-          style={{ backgroundImage: `url(${slide.image})` }} 
-        >
-          <div className="hero-content">
-            <h1>{slide.title}</h1>
-            <p>{slide.subtitle}</p>
-            <a href="#cesped" className="cta-button">Conoce nuestro césped</a>
+    <>
+      <section className={`hero ${isInitialLoad ? 'initial-load' : ''}`} id="inicio">
+        {heroData.map((slide, index) => (
+          <div
+            key={index}
+            loading="lazy"
+            className={`hero-slide ${index === currentSlide ? 'active' : ''}`}
+            style={{ backgroundImage: `url(${slide.image})` }}
+          >
+            <div className="hero-content">
+              <h1>{slide.title}</h1>
+              <p>{slide.subtitle}</p>
+              <a href="#cesped" className="cta-button">Conoce nuestro césped</a>
+            </div>
           </div>
-        </div>
-      ))}
-    </section>
+        ))}
+      </section>
+      
+      <a 
+        href={whasap} 
+        target="_blank" 
+        rel="noopener noreferrer" 
+       
+      >
+        <img className="whatsapp-logo" src={whasap} alt="WhatsApp" />
+      </a>
+    </>
   );
 }
-
+ // <img src={} alt="WhatsApp" />
 export default Hero;

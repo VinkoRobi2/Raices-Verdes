@@ -139,3 +139,45 @@
     font-size: 0.8rem;
   }
 }
+.whatsapp-logo {
+  position: fixed;
+  bottom: 60px; /* Distancia desde el borde inferior */
+  left: 1370px; /* Posición en el eje horizontal, ajústalo según tu layout */
+  width: 140px;  /* Tamaño reducido */
+  height: 140px; /* Tamaño reducido */
+  z-index: 1000;
+  animation: jump 1s infinite;
+}
+
+/* Animación de salto */
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Media queries para dispositivos medianos */
+@media (max-width: 768px) {
+  .whatsapp-logo {
+    width: 10px;
+    height: 10px;
+    bottom: 55px;
+    left: 25px;
+  }
+}
+
+/* Media queries para dispositivos pequeños */
+@media (max-width: 480px) {
+  .whatsapp-logo {
+    width: 8px;
+    height: 8px;
+    bottom: 50px;
+    left: 20px;
+  }
+}
