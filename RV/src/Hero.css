@@ -190,7 +190,7 @@
 }
 @media (max-width: 1366px) {
   .whatsapp-logo {
-    left: 1300px;  /* Ajusta la posición según tu layout */
+    left: 800px;  /* Ajusta la posición según tu layout */
     width: 120px;
     height: 120px;
   }
@@ -199,7 +199,7 @@
 /* Para iPad Pro en modo portrait (ancho máximo aproximado: 1024px) */
 @media (max-width: 1024px) {
   .whatsapp-logo {
-    left: 1000px;   /* Ajusta la posición según tu diseño */
+    left: 900px;   /* Ajusta la posición según tu diseño */
     width: 100px;
     height: 100px;
   }
@@ -215,7 +215,7 @@
 /* Para pantallas hasta 1440px */
 @media (max-width: 1440px) {
   .whatsapp-logo {
-    left: 1700px;
+    left: 900px;
     width: 130px;
     height: 130px;
   }
@@ -224,7 +224,7 @@
 /* Para pantallas hasta 1280px */
 @media (max-width: 1280px) {
   .whatsapp-logo {
-    left: 1500px;
+    left: 900px;
     width: 120px;
     height: 120px;
   }
