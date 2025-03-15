@@ -177,6 +177,9 @@
     bottom: 55px;
     left: 25px;
   }
+  h1{
+    color: blue!important;
+  }
 }
 
 /* Media queries para dispositivos pequeños */
@@ -186,6 +189,9 @@
     height: 80px;
     bottom: 50px;
     left: 50px;
+  }
+  h1{
+    color: red!important;
   }
 }
 @media (max-width: 1366px) {
