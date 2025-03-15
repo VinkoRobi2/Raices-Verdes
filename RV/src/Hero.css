@@ -186,7 +186,7 @@
     width: 100px;
     height: 100px;
     bottom: 50px;
-    left: 100px;
+    
     background-color: red;
   }
  
@@ -218,7 +218,7 @@
 /* Para pantallas hasta 1440px */
 @media (max-width: 1440px) {
   .whatsapp-logo {
-    left: 1000px;
+    left: 1100px;
     width: 130px;
     height: 130px;
   }
@@ -227,7 +227,7 @@
 /* Para pantallas hasta 1280px */
 @media (max-width: 1280px) {
   .whatsapp-logo {
-    left: 1000px;
+    left: 1100px;
     width: 120px;
     height: 120px;
   }
