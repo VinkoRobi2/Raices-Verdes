@@ -183,8 +183,11 @@
 /* Media queries para dispositivos pequeños */
 @media (max-width: 480px) {
   .whatsapp-logo {
-    left: 10px;
-  } 
+    width: 100px;
+    height: 100px;
+    bottom: 55px;
+
+  }
 }
 @media (max-width: 1366px) {
   .whatsapp-logo {
@@ -204,7 +207,7 @@
 }
 @media (max-width: 1700px) {
   .whatsapp-logo {
-    left: 1000px;
+    left: 1350px;
     width: 135px;
     height: 135px;
   }
