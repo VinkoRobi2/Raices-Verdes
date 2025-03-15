@@ -181,19 +181,9 @@
 }
 
 /* Media queries para dispositivos pequeños */
-@media (max-width: 480px) {
-  .whatsapp-logo {
-    max-width: 100%; 
-    height: auto;  
-    z-index: 1000;
 
-    
-  }
-  h1{
-    color: red;
-  }
  
-}
+
 @media (max-width: 1366px) {
   .whatsapp-logo {
     left: 800px;  /* Ajusta la posición según tu layout */
