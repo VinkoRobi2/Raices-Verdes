@@ -172,10 +172,10 @@
 /* Media queries para dispositivos medianos */
 @media (max-width: 768px) {
   .whatsapp-logo {
-    width: 10px;
-    height: 10px;
+    width: 100px;
+    height: 100px;
     bottom: 55px;
-    left: 25px;
+
   }
 
 }
