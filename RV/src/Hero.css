@@ -177,22 +177,19 @@
     bottom: 55px;
     left: 25px;
   }
-  h1{
-    color: blue!important;
-  }
+
 }
 
 /* Media queries para dispositivos pequeños */
 @media (max-width: 480px) {
   .whatsapp-logo {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     bottom: 50px;
-    left: 50px;
+    left: 100px;
+    background-color: red;
   }
-  h1{
-    color: red!important;
-  }
+ 
 }
 @media (max-width: 1366px) {
   .whatsapp-logo {
@@ -212,7 +209,7 @@
 }
 @media (max-width: 1700px) {
   .whatsapp-logo {
-    left: 1300px;
+    left: 1000px;
     width: 135px;
     height: 135px;
   }
@@ -221,7 +218,7 @@
 /* Para pantallas hasta 1440px */
 @media (max-width: 1440px) {
   .whatsapp-logo {
-    left: 1300px;
+    left: 1000px;
     width: 130px;
     height: 130px;
   }
@@ -230,7 +227,7 @@
 /* Para pantallas hasta 1280px */
 @media (max-width: 1280px) {
   .whatsapp-logo {
-    left: 1300px;
+    left: 1000px;
     width: 120px;
     height: 120px;
   }
