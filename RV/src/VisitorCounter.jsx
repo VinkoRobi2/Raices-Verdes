@@ -16,6 +16,7 @@ function VisitorCounter() {
         setVisitorCount(resp.visitas);
       } catch (error) {
         setMensajerr("Ha ocurrido un error al obtener las visitas. Inténtelo más tarde.");
+        setVisitorCount("503")
       }
     };
 
