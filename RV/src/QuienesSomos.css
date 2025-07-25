@@ -1,80 +1,107 @@
 .quienes-somos {
-    padding: 4rem 2rem;
-    background-color: #f9f9f9;
-    overflow: hidden;
-  }
-  .opacity{
-    opacity: 0;
-  }
-  
-  .quienes-somos-content {
-    max-width: 800px;
-    margin: 0 auto;
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row; /* Asegurando que los elementos estén en fila */
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; /* Espacio entre la imagen y el texto */
+}
+
+.quienes-somos-content {
+  max-width: 800px;
+  text-align: left;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+  flex: 1;
+}
+
+.quienes-somos.animate .quienes-somos-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.quienes-somos h2 {
+  color: #4CAF50;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.quienes-somos h2::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  bottom: -10px;
+  left: 25%;
+  background-color: #4CAF50;
+  transform: scaleX(0);
+  transition: transform 0.5s ease 0.5s;
+}
+
+.quienes-somos.animate h2::after {
+  transform: scaleX(1);
+}
+
+.quienes-somos p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.quienes-somos.animate p:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.quienes-somos.animate p:nth-child(3) {
+  transition-delay: 0.4s;
+}
+
+.quienes-somos.animate p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.quienes-somos-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quienes-somos-image img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Agrega sombra a la imagen */
+}
+
+@media screen and (max-width: 768px) {
+  .quienes-somos {
+    flex-direction: column; /* En pantallas pequeñas, apilar el texto y la imagen */
     text-align: center;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 1s ease, transform 1s ease;
   }
-  
-  .quienes-somos.animate .quienes-somos-content {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
+
   .quienes-somos h2 {
-    color: #4CAF50;
-    margin-bottom: 2rem;
-    font-size: 2.5rem;
-    position: relative;
-    display: inline-block;
+    font-size: 2rem;
   }
-  
-  .quienes-somos h2::after {
-    content: '';
-    position: absolute;
-    width: 50%;
-    height: 2px;
-    bottom: -10px;
-    left: 25%;
-    background-color: #4CAF50;
-    transform: scaleX(0);
-    transition: transform 0.5s ease 0.5s;
-  }
-  
-  .quienes-somos.animate h2::after {
-    transform: scaleX(1);
-  }
-  
+
   .quienes-somos p {
-    margin-bottom: 1rem;
-    font-size: 1rem;
-    line-height: 1.6;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+    font-size: 0.9rem;
   }
-  
-  .quienes-somos.animate p:nth-child(2) {
-    transition-delay: 0.2s;
+
+  .quienes-somos-image {
+    margin-top: 2rem;
   }
-  
-  .quienes-somos.animate p:nth-child(3) {
-    transition-delay: 0.4s;
+
+  .quienes-somos-image img {
+    max-width: 80%;
   }
-  
-  .quienes-somos.animate p {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  @media screen and (max-width: 768px) {
-    .quienes-somos h2 {
-      font-size: 2rem;
-    }
-  
-    .quienes-somos p {
-      font-size: 0.9rem;
-    }
-  }
-  
-  
+}
